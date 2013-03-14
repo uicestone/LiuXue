@@ -1,0 +1,231 @@
+/*
+	Theme Name: liuxue
+	Author: 陆秋石
+	Version: 0.1
+	Theme: twentytwelve
+*/
+
+body,header,footer,article,section,div,ul,li,h1,h2,h3{
+	margin:0;padding:0;border:0;
+}
+
+body{
+	background-color: #242e2e;
+}
+
+section{
+	width:960px;
+	min-height:100px;
+	margin:0 auto;
+	text-align: center;
+}
+
+section hr{
+	border:none;
+	border-bottom: #000 1px solid;
+}
+
+header, .extend-header{
+	background-color: #00b1a8;
+}
+
+header{
+	padding-top:50px;
+	padding-bottom:18px;
+}
+
+.title{
+	width:239px;
+	border-left:rgb(0,158,151) 1px solid;
+	padding:5px;
+}
+
+.title,nav,nav ul,nav li{
+	float:left;
+}
+
+header nav{
+	width:700px;
+	padding:5px;
+	color:#FFF;
+}
+
+nav ul.primary{
+}
+
+nav ul li{
+	list-style: none;
+	font-size:13px;
+	margin-left:18px;
+}
+
+nav ul.primary li{
+	padding:10px 0;
+}
+
+nav ul.primary li.active{
+	border-bottom: 1px white solid;
+}
+
+nav ul.sub{
+	margin-left:20px;
+	padding:13px 35px;
+	background-color: rgb(0,160,151);
+}
+
+nav ul.sub li{
+	margin-left:40px;
+}
+
+nav ul.primary :first-child,nav ul.sub :first-child{
+	margin-left:0;
+}
+
+article{
+	text-align: left;
+	background-color: #FFF;
+}
+
+.tile{
+	width:292px;height:183px;
+	border:5px white solid;
+	display:inline-block;
+	margin:10px 7px;
+}
+
+.widget{
+	color:white;
+	display:inline-block;
+	text-align: left;
+	margin:15px 5px;
+}
+
+.widget.column-3-1{
+	width:300px;
+}
+
+.widget.column-1{
+	width:100%;
+}
+
+.widget .column-2-1{
+	float: left;
+	width:460px;
+	margin:0;
+	padding:0 10px;
+}
+
+.widget .column-5-1{
+	display: inline-block;
+	width:151px;
+}
+
+.widget h2{
+	margin:0;
+	padding-left:50px;
+	margin-bottom:10px;
+	font-size:18px;
+}
+
+.widget h2{
+	background-repeat: no-repeat;
+	height:30px;
+	line-height: 30px;
+}
+
+.widget.news h2{
+	background-image:url('/wp-content/uploads/2013/03/widget_title_news.png');
+}
+
+.widget.service h2{
+	background-image:url('/wp-content/uploads/2013/03/widget_title_service.png');
+}
+
+.widget.discount h2{
+	background-image:url('/wp-content/uploads/2013/03/widget_title_discount.png');
+}
+
+.widget.project h2{
+	background-image:url('/wp-content/uploads/2013/03/widget_title_project.png');
+}
+
+.widget.partner h2{
+	background-image:url('/wp-content/uploads/2013/03/widget_title_partner.png');
+}
+
+.widget ul{
+	margin-bottom:10px;
+}
+
+.widget ul li{
+	list-style: none;
+	line-height: 1.5;
+	font-size:13px;
+	text-indent: 1em;
+	color:#AAA;
+}
+
+.widget ul li .en{
+	float: right;
+}
+
+.widget .read-more{
+	cursor: pointer;
+	width:107px;height:28px;
+	color:white;
+	border:none;
+	background-color: transparent;
+	background-image: url('/wp-content/uploads/2013/03/view_more_bg.png');
+}
+
+footer .service{
+	background-color: #151a1b;
+}
+
+.widget ul h3{
+	color:rgb(84,148,228);
+	font-size:15px;
+	margin-bottom: 10px;
+}
+
+.service-content{
+	width: 880px;
+	margin:0 auto;
+}
+
+.service-content ul.column-5-1{
+	border-left: #333 1px solid;
+	padding:0 10px;
+}
+
+.service-content ul:first-child{
+	border-left: 0;
+}
+
+footer{
+	color:#999;
+}
+
+footer nav{
+	float:right;
+	color:#999;
+}
+
+footer .copy{
+	float: left;
+	font-size:10px;
+}
+
+article{
+	width:700px;
+	display: inline-block;
+	text-align: left;
+	background-color: #FFF;
+	padding:20px;
+	margin:10px 0;
+}
+
+aside{
+	float: right;
+	width:200px;
+}
