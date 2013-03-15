@@ -21,7 +21,7 @@
 	<header>
 		<section>
 			<h1 class="title">
-				<img src="wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" /><img src="wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" />
+				<img src="/wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" /><img src="/wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" />
 			</h1>
 			<nav>
 				<?wp_nav_menu(array('menu'=>'primary','menu_class'=>'primary','depth'=>1,'container'=>false))?>
