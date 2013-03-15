@@ -260,6 +260,11 @@ article .content.single{
 	white-space:pre-line;
 }
 
+article .content.single img{
+	max-width: 550px;
+	height:auto;
+}
+
 article h1{
 	text-align: left;
 	padding:10px 0;
@@ -280,6 +285,7 @@ article .content .item{
 }
 
 aside{
+	margin-top:10px;
 	float: right;
 	width:300px;
 	color:white;
