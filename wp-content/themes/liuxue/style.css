@@ -5,12 +5,25 @@
 	Theme: twentytwelve
 */
 
-body,header,footer,article,section,div,ul,li,h1,h2,h3{
+body,header,footer,article,section,div,ul,li,h1,h2,h3,img,dd,dl,dt{
 	margin:0;padding:0;border:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.shadow{
+	box-shadow:3px 2px 5px black;
 }
 
 body{
 	background-color: #242e2e;
+	font-family:'Microsoft Yahei';
 }
 
 section{
@@ -47,10 +60,10 @@ header{
 header nav{
 	width:700px;
 	padding:5px;
-	color:#FFF;
 }
 
-nav ul.primary{
+header nav a{
+	color:#FFF;
 }
 
 nav ul li{
@@ -63,8 +76,16 @@ nav ul.primary li{
 	padding:10px 0;
 }
 
-nav ul.primary li.active{
+nav ul.primary li.current-menu-item, nav ul.primary li.current-post-ancestor{
 	border-bottom: 1px white solid;
+}
+
+nav ul.primary li .sub-menu{
+	display: none;
+}
+
+nav ul.primary li.current-menu-ancestor .sub-menu{
+	display: block;
 }
 
 nav ul.sub{
@@ -83,14 +104,13 @@ nav ul.primary :first-child,nav ul.sub :first-child{
 
 article{
 	text-align: left;
-	background-color: #FFF;
 }
 
 .tile{
 	width:292px;height:183px;
 	border:5px white solid;
 	display:inline-block;
-	margin:10px 7px;
+	margin:10px 5px;
 }
 
 .widget{
@@ -101,7 +121,12 @@ article{
 }
 
 .widget.column-3-1{
+	float:left;
 	width:300px;
+}
+
+.widget ul{
+	min-height:100px
 }
 
 .widget.column-1{
@@ -116,7 +141,7 @@ article{
 }
 
 .widget .column-5-1{
-	display: inline-block;
+	float: left;
 	width:151px;
 }
 
@@ -165,6 +190,10 @@ article{
 	color:#AAA;
 }
 
+.widget ul li a{
+	color:#AAA;
+}
+
 .widget ul li .en{
 	float: right;
 }
@@ -172,10 +201,13 @@ article{
 .widget .read-more{
 	cursor: pointer;
 	width:107px;height:28px;
-	color:white;
 	border:none;
 	background-color: transparent;
 	background-image: url('/wp-content/uploads/2013/03/view_more_bg.png');
+}
+
+.widget .read-more a{
+	color:white;
 }
 
 footer .service{
@@ -195,7 +227,7 @@ footer .service{
 
 .service-content ul.column-5-1{
 	border-left: #333 1px solid;
-	padding:0 10px;
+	padding:0 8px;
 }
 
 .service-content ul:first-child{
@@ -217,15 +249,50 @@ footer .copy{
 }
 
 article{
-	width:700px;
+	width:610px;
 	display: inline-block;
 	text-align: left;
-	background-color: #FFF;
-	padding:20px;
 	margin:10px 0;
+	min-height:650px;
+}
+
+article .content{
+	background-color: #FFF;
+	padding:30px;
+	line-height:1.5;
+	font-size:15px;
+}
+
+article .content.single{
+	white-space:pre-line;
+}
+
+article h1{
+	text-align: left;
+	padding:10px 0;
+	color:white;
+}
+
+article .content h2 a{
+	color:black;
+	font-size:20px;
+}
+
+article .content summary{
+	color:#555;
+}
+
+article .content .item{
+	margin-bottom:30px;
 }
 
 aside{
 	float: right;
-	width:200px;
+	width:300px;
+	color:white;
+}
+aside dl{
+	margin-bottom:10px;
+	margin-left:20px;
+	text-align: left;
 }

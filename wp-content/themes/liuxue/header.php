@@ -10,6 +10,9 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="<?bloginfo('template_url')?>/css/ie7.css" />
+<![endif]-->
 <link rel="stylesheet" type="text/css" href="<?bloginfo('stylesheet_url')?>" />
 <?php wp_head(); ?>
 </head>
@@ -18,28 +21,11 @@
 	<header>
 		<section>
 			<h1 class="title">
-				<img src="wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" />
-				<img src="wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" />
+				<img src="wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" /><img src="wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" />
 			</h1>
 			<nav>
-				<ul class="primary">
-					<li>首页</li>
-					<li class="active">关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-					<li>关于我们</li>
-				</ul>
-				<ul class="sub">
-					<li>概况</li>
-					<li>文化与宗旨</li>
-					<li>团队</li>
-					<li>选择星瀚的理由</li>
-				</ul>
+				<?wp_nav_menu(array('menu'=>'primary','menu_class'=>'primary','depth'=>1,'container'=>false))?>
+				<?!is_front_page() && wp_nav_menu(array('walker'=> new Custom_Walker_Nav_Sub_Menu(),'container'=>false,'menu_class'=>'sub'));?>
 			</nav>
 		</section>
 	</header>

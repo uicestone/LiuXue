@@ -6,43 +6,38 @@
 					<div class="service-content">
 						<ul class="column-5-1">
 							<h3>个人留学</h3>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
+							<?query_posts('category_name=study-abroad')?>
+							<?while(have_posts()):the_post();?>
+							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
+							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>个人留学</h3>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
+							<h3>培训项目</h3>
+							<?query_posts('category_name=training')?>
+							<?while(have_posts()):the_post();?>
+							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
+							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>个人留学</h3>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
+							<h3>合作办学</h3>
+							<?query_posts('category_name=cooperation')?>
+							<?while(have_posts()):the_post();?>
+							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
+							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>个人留学</h3>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
+							<h3>后续服务</h3>
+							<?query_posts('category_name=supplement')?>
+							<?while(have_posts()):the_post();?>
+							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
+							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>个人留学</h3>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
-							<li>成长规划</li>
+							<h3>考察与夏令营</h3>
+							<?query_posts('category_name=investigation')?>
+							<?while(have_posts()):the_post();?>
+							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
+							<?endwhile;?>
 						</ul>
 					</div>
 				</div>
@@ -61,5 +56,6 @@
 			</nav>
 		</section>
 	</footer>
+<?wp_footer()?>
 </body>
 </html>
