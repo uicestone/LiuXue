@@ -5,35 +5,35 @@
 					<h2>服务项目</h2>
 					<div class="service-content">
 						<ul class="column-5-1">
-							<h3>个人留学</h3>
+							<h3><a href="/category/study-abroad/">个人留学</a></h3>
 							<?query_posts('category_name=study-abroad')?>
 							<?while(have_posts()):the_post();?>
 							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
 							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>培训项目</h3>
+							<h3><a href="/category/training/">培训项目</a></h3>
 							<?query_posts('category_name=training')?>
 							<?while(have_posts()):the_post();?>
 							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
 							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>合作办学</h3>
+							<h3><a href="/category/cooperation">合作办学</a></h3>
 							<?query_posts('category_name=cooperation')?>
 							<?while(have_posts()):the_post();?>
 							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
 							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>后续服务</h3>
+							<h3><a href="/category/supplement/">后续服务</a></h3>
 							<?query_posts('category_name=supplement')?>
 							<?while(have_posts()):the_post();?>
 							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>
 							<?endwhile;?>
 						</ul>
 						<ul class="column-5-1">
-							<h3>考察与夏令营</h3>
+							<h3><a href="/category/investigation/">考察与夏令营</a></h3>
 							<?query_posts('category_name=investigation')?>
 							<?while(have_posts()):the_post();?>
 							<li><a href="<?the_permalink()?>"><?the_title()?></a></li>

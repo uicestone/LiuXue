@@ -215,9 +215,12 @@ footer .service{
 }
 
 .widget ul h3{
-	color:rgb(84,148,228);
 	font-size:15px;
 	margin-bottom: 10px;
+}
+
+.widget ul h3 a{
+	color:rgb(84,148,228);
 }
 
 .service-content{
