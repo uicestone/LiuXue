@@ -18,14 +18,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header>
+	<header class="shadow">
 		<section>
-			<h1 class="title">
-				<img src="/wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" /><img src="/wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" />
+			<h1 class="title shadow">
+				<a href="<?bloginfo('siteurl')?>"><img src="/wp-content/uploads/2013/03/logo_allstar.png" alt="星瀚国际中心" /><img src="/wp-content/uploads/2013/03/logo_liuxue.png" alt="星瀚国际留学中心" /></a>
 			</h1>
 			<nav>
-				<?wp_nav_menu(array('menu'=>'primary','menu_class'=>'primary','depth'=>1,'container'=>false))?>
-				<?!is_front_page() && wp_nav_menu(array('walker'=> new Custom_Walker_Nav_Sub_Menu(),'container'=>false,'menu_class'=>'sub'));?>
+				<?wp_nav_menu(array('menu'=>'主导航','menu_class'=>'primary','depth'=>1,'container'=>false))?>
+				<?!is_front_page() && wp_nav_menu(array('menu'=>'主导航','walker'=> new Custom_Walker_Nav_Sub_Menu(),'container'=>false,'menu_class'=>'sub'));?>
 			</nav>
 		</section>
 	</header>
