@@ -1,3 +1,7 @@
 .tile,.widget,.article{
 	float:left;
 }
+
+a{
+	color:white;
+}
