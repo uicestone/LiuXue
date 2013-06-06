@@ -1,15 +1,15 @@
 <?get_header()?>
 	<div class="extend-header shadow">
 		<section class="tiles">
-			<div class="tile"><a href="/us/innovation/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_1.png"></a></div>
-			<div class="tile"><a href="/services/supplement/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_2.png"></a></div>
-			<div class="tile"><a href="/services/cooperation/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_3.png"></a></div>
+			<div class="tile"><a href="/category/留学美国/特色内容-留学美国/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_1.png"></a></div>
+			<div class="tile"><a href="/category/服务项目/后续服务/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_2.png"></a></div>
+			<div class="tile"><a href="/category/服务项目/合作办学/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_3.png"></a></div>
 		</section>
 	</div>
 	<section class="tiles">
-		<div class="tile"><a href="/cases/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_4.png"></a></div>
-		<div class="tile"><a href="/lifestyle/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_5.png"></a></div>
-		<div class="tile"><a href="/evaluation/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_6.png"></a></div>
+		<div class="tile"><a href="/category/案例分享/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_4.png"></a></div>
+		<div class="tile"><a href="/category/海外生活/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_5.png"></a></div>
+		<div class="tile"><a href="/免费评估/" target="_blank"><img src="/wp-content/uploads/2013/03/tile_6.png"></a></div>
 		<hr>
 	</section>
 	<section>
@@ -47,15 +47,15 @@
 	</section>
 	<section>
 		<div class="widget column-1 partner">
-			<h2><a href="/us/college/">合作伙伴</a></h2>
+			<h2><a href="/留学美国/美国大学/">合作伙伴</a></h2>
 			<ul class="column-2-1">
-				<?query_posts('category_name=us/college&posts_per_page=5')?>
+				<?query_posts('category_name=留学美国/美国大学&posts_per_page=5')?>
 				<?while(have_posts()):the_post();?>
 				<li><a href="<?the_permalink()?>" target="_blank"><?the_title()?></a></li>
 				<?endwhile;?>
 			</ul>
 			<ul class="column-2-1">
-				<?query_posts('category_name=us/college&posts_per_page=5&paged=2')?>
+				<?query_posts('category_name=留学美国/美国大学&posts_per_page=5&paged=2')?>
 				<?while(have_posts()):the_post();?>
 				<li><a href="<?the_permalink()?>" target="_blank"><?the_title()?></a></li>
 				<?endwhile;?>
