@@ -21,10 +21,10 @@ function wp_smtp_page(){
 			echo '<div id="message" class="updated fade"><p><strong>' . __("The field \"From\" must be a valid email address!","WP-SMTP") . '</strong></p></div>';
 		}
 		elseif(empty($wsOptions["host"])){
-			echo '<div id="message" class="updated fade"><p><strong>' . __("The field \"Host\" can not be left blank!","WP-SMTP") . '</strong></p></div>';
+			echo '<div id="message" class="updated fade"><p><strong>' . __("The field \"SMTP Host\" can not be left blank!","WP-SMTP") . '</strong></p></div>';
 		}
 		else{
-			echo '<div id="message" class="updated fade"><p><strong>' . __("Options saved.") . '</strong></p></div>';
+			echo '<div id="message" class="updated fade"><p><strong>' . __("Options saved.","WP-SMTP") . '</strong></p></div>';
 		}
 	}
 	if(isset($_POST['wp_smtp_test'])){
@@ -40,7 +40,7 @@ function wp_smtp_page(){
 			}
 		}
 		else{
-			$failed = 1;
+			$failed = 2;
 		}
 		if(!$failed){
 			if($result==TRUE){
@@ -50,8 +50,11 @@ function wp_smtp_page(){
 				$failed = 1;
 			}
 		}
-		if($failed){
+		if($failed == 1){
 			echo '<div id="message" class="updated fade"><p><strong>' . __("Some errors occurred!","WP-SMTP") . '</strong></p></div>';
+		}
+		elseif($failed == 2){
+			echo '<div id="message" class="updated fade"><p><strong>' . __("The fields \"To\" \"Subject\" \"Message\" can not be left blank when testing!","WP-SMTP") . '</strong></p></div>';
 		}
 	}
 ?>
@@ -62,9 +65,10 @@ function wp_smtp_page(){
 WP SMTP
 <span style="margin-left:10px; vertical-align:middle;">
 <a href="<?php echo plugins_url('screenshot-1.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/gmail.png',__FILE__); ?>" alt="Gmail" title="Gmail" /></a>
-<a href="<?php echo plugins_url('screenshot-2.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/microsoft.png',__FILE__); ?>" alt="Microsoft" title="Microsoft" /></a>
-<a href="<?php echo plugins_url('screenshot-3.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/163.png',__FILE__); ?>" alt="163" title="163" /></a>
-<a href="<?php echo plugins_url('screenshot-4.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/qq.png',__FILE__); ?>" alt="QQ" title="QQ" /></a>
+<a href="<?php echo plugins_url('screenshot-2.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/yahoo.png',__FILE__); ?>" alt="Yahoo!" title="Yahoo!" /></a>
+<a href="<?php echo plugins_url('screenshot-3.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/microsoft.png',__FILE__); ?>" alt="Microsoft" title="Microsoft" /></a>
+<a href="<?php echo plugins_url('screenshot-4.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/163.png',__FILE__); ?>" alt="163" title="163" /></a>
+<a href="<?php echo plugins_url('screenshot-5.png',__FILE__); ?>" target="_blank"><img src="<?php echo plugins_url('/img/qq.png',__FILE__); ?>" alt="QQ" title="QQ" /></a>
 </span>
 </h2>
 
@@ -93,7 +97,7 @@ WP SMTP
 	</tr>
 	<tr valign="top">
 		<th scope="row">
-			<?php _e('Host','WP-SMTP'); ?>
+			<?php _e('SMTP Host','WP-SMTP'); ?>
 		</th>
 		<td>
 			<label>
@@ -124,7 +128,7 @@ WP SMTP
 	</tr>
 	<tr valign="top">
 		<th scope="row">
-			<?php _e('Port','WP-SMTP'); ?>
+			<?php _e('SMTP Port','WP-SMTP'); ?>
 		</th>
 		<td>
 			<label>

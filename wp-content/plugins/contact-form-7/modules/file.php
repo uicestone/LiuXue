@@ -159,11 +159,7 @@ function wpcf7_file_validation_filter( $result, $tag ) {
 	wpcf7_init_uploads(); // Confirm upload dir
 
 	$filename = $file['name'];
-
-	// If you get script file, it's a danger. Make it TXT file.
-	if ( preg_match( '/\.(php|pl|py|rb|cgi)\d?$/', $filename ) )
-		$filename .= '.txt';
-
+	$filename = wpcf7_antiscript_file_name( $filename );
 	$filename = wp_unique_filename( $uploads_dir, $filename );
 
 	$new_file = trailingslashit( $uploads_dir ) . $filename;
@@ -282,7 +278,7 @@ function wpcf7_file_display_warning_message() {
 	$uploads_dir = wpcf7_upload_tmp_dir();
 	wpcf7_init_uploads();
 
-	if ( ! is_dir( $uploads_dir ) || ! is_writable( $uploads_dir ) ) {
+	if ( ! is_dir( $uploads_dir ) || ! wp_is_writable( $uploads_dir ) ) {
 		$message = sprintf( __( 'This contact form contains file uploading fields, but the temporary folder for the files (%s) does not exist or is not writable. You can create the folder or change its permission manually.', 'wpcf7' ), $uploads_dir );
 
 		echo '<div class="error"><p><strong>' . esc_html( $message ) . '</strong></p></div>';
@@ -321,7 +317,7 @@ function wpcf7_cleanup_upload_files() {
 		return false;
 	if ( ! is_readable( $dir ) )
 		return false;
-	if ( ! is_writable( $dir ) )
+	if ( ! wp_is_writable( $dir ) )
 		return false;
 
 	if ( $handle = @opendir( $dir ) ) {

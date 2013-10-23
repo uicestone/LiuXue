@@ -1,11 +1,11 @@
 === WP SMTP ===
 Contributors: boliquan
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SKA6TPPWSATKG&item_name=BoLiQuan&no_shipping=0&no_note=1&tax=0&currency_code=USD&lc=CA&bn=PP%2dDonationsBF&charset=UTF%2d8
-Tags: wp smtp,smtp,mail,email,phpmailer,mailer,wp mail,gmail,mail smtp,ssl,tls
+Tags: wp smtp,smtp,mail,email,phpmailer,mailer,wp mail,gmail,yahoo,mail smtp,ssl,tls
 License: GPLv2
 Requires at least: 2.7
-Tested up to: 3.5
-Stable tag: 1.1.5
+Tested up to: 3.6.1
+Stable tag: 1.1.6
 
 WP SMTP can help us to send emails via SMTP instead of the PHP mail() function. 
 
@@ -13,15 +13,15 @@ WP SMTP can help us to send emails via SMTP instead of the PHP mail() function.
 
 WP SMTP can help us to send emails via SMTP instead of the PHP mail() function.
 It adds a settings page to "Dashboard"->"Settings"->"WP SMTP" where you can configure the email settings.
-There are some examples on the settings page, you can click the corresponding icon to view (such as "Gmail").
-If the field "From" was not a valid email address, or the field "Host" was left blank, it will not reconfigure the wp_mail() function.
+There are some examples on the settings page, you can click the corresponding icon to view (such as "Gmail""Yahoo!""Microsoft""163""QQ").
+If the field "From" was not a valid email address, or the field "SMTP Host" was left blank, it will not reconfigure the wp_mail() function.
 
 = Usage =
 
 1. Download and extract `wp-smtp.zip` to `wp-content/plugins/`
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. "Dashboard"->"Settings"->"WP SMTP"
-4. There are some examples on the settings page, you can click the corresponding icon to view.(such as "Gmail""Microsoft""163""QQ") 
+4. There are some examples on the settings page, you can click the corresponding icon to view.(such as "Gmail""Yahoo!""Microsoft""163""QQ") 
 5. For more information of this plugin, please visit: [Plugin Homepage](http://boliquan.com/wp-smtp/ "WP SMTP").
 
 Related Links:
@@ -43,10 +43,15 @@ Related Links:
 1. Download and extract `wp-smtp.zip` to `wp-content/plugins/`
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. "Dashboard"->"Settings"->"WP SMTP"
-4. There are some examples on the settings page, you can click the corresponding icon to view.(such as "Gmail""Microsoft""163""QQ") 
+4. There are some examples on the settings page, you can click the corresponding icon to view.(such as "Gmail""Yahoo!""Microsoft""163""QQ") 
 5. For more information of this plugin, please visit: [Plugin Homepage](http://boliquan.com/wp-smtp/ "WP SMTP").
 
 == Changelog ==
+
+= 1.1.6 =
+
+* Add Yahoo! example
+* Some optimization
 
 = 1.1.5 =
 
@@ -69,9 +74,10 @@ Related Links:
 == Screenshots ==
 
 1. "Gmail.com" settings
-2. "Live.com" settings
-3. "163.com" settings
-4. "QQ.com" settings
+2. "Yahoo.com" settings
+3. "Live.com" settings
+4. "163.com" settings
+5. "QQ.com" settings
 
 
 == Frequently Asked Questions ==
