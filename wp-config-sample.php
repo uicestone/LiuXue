@@ -79,6 +79,14 @@ define('WPLANG', 'zh_CN');
  */
 define('WP_DEBUG', false);
 
+/**
+ * zh_CN本地化设置：启用ICP备案号显示
+ *
+ * 可在设置→常规中修改。
+ * 如需禁用，请移除或注释掉本行。
+ */
+define('WP_ZH_CN_ICP_NUM', true);
+
 /* 好了！请不要再继续编辑。请保存本文件。使用愉快！ */
 
 /** WordPress目录的绝对路径。 */
