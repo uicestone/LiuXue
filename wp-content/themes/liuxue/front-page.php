@@ -24,14 +24,14 @@
 			<button class="read-more"><a href="/tag/资讯/" target="_blank">Read more</a></button>
 		</div>
 		<div class="widget column-3-1 discount">
-			<h2>优惠活动</h2>
+			<h2>案例分享</h2>
 			<ul>
-				<?query_posts('tag=优惠活动')?>
+				<?query_posts('category_name=案例分享')?>
 				<?while(have_posts()):the_post();?>
 				<li><a href="<?the_permalink()?>" target="_blank"><?the_title()?></a></li>
 				<?endwhile;?>
 			</ul>
-			<button class="read-more"><a href="/tag/优惠活动/" target="_blank">Read more</a></button>
+			<button class="read-more"><a href="/category/案例分享/" target="_blank">Read more</a></button>
 		</div>
 		<div class="widget column-3-1 project">
 			<h2>特色项目</h2>
