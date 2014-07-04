@@ -3,7 +3,7 @@
 Plugin Name: WP SMTP
 Plugin URI: http://boliquan.com/wp-smtp/
 Description: WP SMTP can help us to send emails via SMTP instead of the PHP mail() function.
-Version: 1.1.6
+Version: 1.1.7
 Author: BoLiQuan
 Author URI: http://boliquan.com/
 Text Domain: WP-SMTP

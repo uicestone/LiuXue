@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SKA6T
 Tags: wp smtp,smtp,mail,email,phpmailer,mailer,wp mail,gmail,yahoo,mail smtp,ssl,tls
 License: GPLv2
 Requires at least: 2.7
-Tested up to: 3.6.1
-Stable tag: 1.1.6
+Tested up to: 3.8.1
+Stable tag: 1.1.7
 
 WP SMTP can help us to send emails via SMTP instead of the PHP mail() function. 
 
@@ -47,6 +47,10 @@ Related Links:
 5. For more information of this plugin, please visit: [Plugin Homepage](http://boliquan.com/wp-smtp/ "WP SMTP").
 
 == Changelog ==
+
+= 1.1.7 =
+
+* Using a nonce to increase security.
 
 = 1.1.6 =
 
